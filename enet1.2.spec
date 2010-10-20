@@ -1,8 +1,8 @@
 %define major 0
-%define libname %mklibname enet %{major}
-%define develname %mklibname enet -d
+%define libname %mklibname enet 1.2 %{major}
+%define develname %mklibname enet 1.2 -d
 
-Name:		libenet
+Name:		enet1.2
 Version:	1.2.2
 Release:	%mkrel 1
 Summary:	Simple Network Communication Layer on Top of UDP
