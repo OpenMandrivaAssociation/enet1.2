@@ -3,13 +3,13 @@
 %define develname %mklibname enet 1.2 -d
 
 Name:		enet1.2
-Version:	1.2.2
+Version:	1.2.3
 Release:	%mkrel 1
 Summary:	Simple Network Communication Layer on Top of UDP
 License:	BSD
 Group:		System/Libraries
 Url:		http://enet.bespin.org/
-Source:		enet-%{version}.tar.bz2
+Source:		http://enet.bespin.org/download/enet-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
@@ -38,7 +38,7 @@ portable, and easily embeddable.
 
 %package -n	%{develname}
 Group:		Development/C
-Provides:   %{name}-devel = %{version}-%{release}
+Provides:	%{name}-devel = %{version}-%{release}
 Requires:	%{libname} = %{version}-%{release}
 Summary:	Simple Network Communication Layer on Top of UDP
 
@@ -61,13 +61,16 @@ portable, and easily embeddable.
 %make
 
 %install
-%makeinstall
+%makeinstall_std
+
+#we don't want these
+rm -rf %{buildroot}%{_libdir}/libenet.la
 
 %check
 %make check
 
 %clean
-rm -rf "%{buildroot}"
+rm -rf %{buildroot}
 
 %files -n %{libname}
 %defattr(-,root,root)
@@ -77,6 +80,4 @@ rm -rf "%{buildroot}"
 %defattr(-,root,root)
 %{_includedir}/enet
 %{_libdir}/libenet.so
-%{_libdir}/libenet.la
 %{_libdir}/pkgconfig/libenet.pc
-
