@@ -3,14 +3,13 @@
 %define develname %mklibname enet 1.2 -d
 
 Name:		enet1.2
-Version:	1.2.3
+Version:	1.2.4
 Release:	%mkrel 1
 Summary:	Simple Network Communication Layer on Top of UDP
 License:	BSD
 Group:		System/Libraries
 Url:		http://enet.bespin.org/
 Source:		http://enet.bespin.org/download/enet-%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 ENet's purpose is to provide a relatively thin, simple and robust network 
