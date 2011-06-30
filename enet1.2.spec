@@ -3,7 +3,7 @@
 %define develname %mklibname enet 1.2 -d
 
 Name:		enet1.2
-Version:	1.2.4
+Version:	1.2.5
 Release:	%mkrel 1
 Summary:	Simple Network Communication Layer on Top of UDP
 License:	BSD
