@@ -80,3 +80,25 @@ rm -rf %{buildroot}
 %{_includedir}/enet
 %{_libdir}/libenet.so
 %{_libdir}/pkgconfig/libenet.pc
+
+
+%changelog
+* Thu Jun 30 2011 Jani Välimaa <wally@mandriva.org> 1.2.5-1mdv2011.0
++ Revision: 688363
+- update to new version 1.2.5
+
+* Thu Jun 02 2011 Jani Välimaa <wally@mandriva.org> 1.2.4-1
++ Revision: 682508
+- new version 1.2.4
+
+* Thu Feb 10 2011 Jani Välimaa <wally@mandriva.org> 1.2.3-1
++ Revision: 637168
+- new version 1.2.3
+- get rid of the .la file
+
+* Wed Oct 20 2010 Guillaume Rousse <guillomovitch@mandriva.org> 1.2.2-1mdv2011.0
++ Revision: 586966
+- renaming
+- renaming to match other package naming
+- import libenet
+
