@@ -4,7 +4,7 @@
 
 Name:		enet1.2
 Version:	1.2.5
-Release:	%mkrel 1
+Release:	2
 Summary:	Simple Network Communication Layer on Top of UDP
 License:	BSD
 Group:		System/Libraries
