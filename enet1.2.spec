@@ -8,7 +8,7 @@ Release:	2
 Summary:	Simple Network Communication Layer on Top of UDP
 License:	BSD
 Group:		System/Libraries
-Url:		http://enet.bespin.org/
+Url:		https://enet.bespin.org/
 Source:		http://enet.bespin.org/download/enet-%{version}.tar.gz
 
 %description
